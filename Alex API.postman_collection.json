@@ -1,0 +1,112 @@
+{
+	"info": {
+		"_postman_id": "c2eacada-e900-43f3-bedf-74afbca107fb",
+		"name": "Alex API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "36165756"
+	},
+	"item": [
+		{
+			"name": "Get12",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://restapilive.onrender.com/userreg?fname=alex&lname=parmar&email=alex@gmail.com&phno=84578454875&pass=Alex@123&gender=M",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"userreg"
+					],
+					"query": [
+						{
+							"key": "fname",
+							"value": "alex"
+						},
+						{
+							"key": "lname",
+							"value": "parmar"
+						},
+						{
+							"key": "email",
+							"value": "alex@gmail.com"
+						},
+						{
+							"key": "phno",
+							"value": "84578454875"
+						},
+						{
+							"key": "pass",
+							"value": "Alex@123"
+						},
+						{
+							"key": "gender",
+							"value": "M"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://restapilive.onrender.com/alogin?email=admin@gmail.com&password=admin",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "admin123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin@gmail.com",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "admin@gmail.com",
+						"type": "text"
+					},
+					{
+						"key": "password",
+						"value": "admin",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://restapilive.onrender.com/alogin?email=admin@gmail.com&password=admin",
+					"protocol": "https",
+					"host": [
+						"restapilive",
+						"onrender",
+						"com"
+					],
+					"path": [
+						"alogin"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "admin@gmail.com"
+						},
+						{
+							"key": "password",
+							"value": "admin"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
